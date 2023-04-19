@@ -1,5 +1,5 @@
 # Learning-Constrained-Structured-Spaces-with-Application-to-Multi-Graph-Matching
-This is the official code for the AISTATS 2023 paper "Learning Constrained Structured Spaces with Application to Multi-Graph Matching".
+This is the official code for the [AISTATS 2023](https://proceedings.mlr.press/v206/indelman23a/indelman23a.pdf) paper "Learning Constrained Structured Spaces with Application to Multi-Graph Matching".
 
 Our method for end-to-end learning multi-graph matching accounts for pairwise missing correspondences and allows for minimizing the structured loss without relaxing the matching prediction. We extend the direct loss minimization to settings in which the black-box solvers are computationally inefficient, as in the setting of multi-graph matchings. Thus, our method allows learning cycle-consistent matchings, while not using a cycle-consistent matching solver, while theoretically recovering the constrained multi-graph matching optimal solution.
 
