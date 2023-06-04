@@ -1,15 +1,17 @@
+
 # Learning-Constrained-Structured-Spaces-with-Application-to-Multi-Graph-Matching
 This is the official code for the [AISTATS 2023](https://proceedings.mlr.press/v206/indelman23a/indelman23a.pdf) paper "Learning Constrained Structured Spaces with Application to Multi-Graph Matching".
 
-Our method for end-to-end learning multi-graph matching accounts for pairwise missing correspondences and allows for minimizing the structured loss without relaxing the matching prediction. We extend the direct loss minimization to settings in which the black-box solvers are computationally inefficient, as in the setting of multi-graph matchings. Thus, our method allows learning cycle-consistent matchings, while not using a cycle-consistent matching solver, while theoretically recovering the constrained multi-graph matching optimal solution.
-
-This code demonstrates the effectiveness of our method in balanced and unbalanced two-graph, hypergraph, and multi-graph matching tasks.
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-constrained-structured-spaces-with/graph-matching-on-pascal-voc)](https://paperswithcode.com/sota/graph-matching-on-pascal-voc?p=learning-constrained-structured-spaces-with)
 
 ## Cycle-consistency loss
 <p align="center">
   <img src="https://user-images.githubusercontent.com/46455293/217747708-2454dc59-e18f-4364-b15d-4a7b1f73663c.svg" width="450" title="cycle_consistency_loss">
 </p>
 
+Our method for end-to-end learning multi-graph matching accounts for pairwise missing correspondences and allows for minimizing the structured loss without relaxing the matching prediction. We extend the direct loss minimization to settings in which the black-box solvers are computationally inefficient, as in the setting of multi-graph matchings. Thus, our method allows learning cycle-consistent matchings, while not using a cycle-consistent matching solver, while theoretically recovering the constrained multi-graph matching optimal solution.
+
+This code demonstrates the effectiveness of our method in balanced and unbalanced two-graph, hypergraph, and multi-graph matching tasks.
 
 A toy illustration of our cycle-consistency loss for 3-graph $G_i, G_k, G_j$ unbalanced (partial) matching. Pairwise matchings $y^{\ast}(x^{ij}),y^{\ast}(x^{ik}),y^{\ast}(x^{jk})$ are predicted. 
 The cycle-consistency constraint on the matching between $G_i$ and $G_k$ w.r.t. passing the matching through image $G^j$ involves inequalities of the form $y^{\ast}(x^{ij})y^{\ast}(x^{jk}) \le y^{\ast}(x^{ik})$. This constraint translates to the penalty function $max(0, y^{\ast}(x^{ij})y^{\ast}(x^{jk}) -y^{\ast}(x^{ik}))$. Depicted is the cycle-consistency loss of the predicted pairwise matching $y^{\ast}(x^{ik})$. 
