@@ -4,10 +4,13 @@ This is the official code for the [AISTATS 2023](https://proceedings.mlr.press/v
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-constrained-structured-spaces-with/graph-matching-on-pascal-voc)](https://paperswithcode.com/sota/graph-matching-on-pascal-voc?p=learning-constrained-structured-spaces-with)
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-constrained-structured-spaces-with/graph-matching-on-willow-object-class)](https://paperswithcode.com/sota/graph-matching-on-willow-object-class?p=learning-constrained-structured-spaces-with)
+
 ## Cycle-consistency loss
 <p align="center">
   <img src="https://user-images.githubusercontent.com/46455293/217747708-2454dc59-e18f-4364-b15d-4a7b1f73663c.svg" width="450" title="cycle_consistency_loss">
 </p>
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-constrained-structured-spaces-with/graph-matching-on-willow-object-class)](https://paperswithcode.com/sota/graph-matching-on-willow-object-class?p=learning-constrained-structured-spaces-with)
 
 Our method for end-to-end learning multi-graph matching accounts for pairwise missing correspondences and allows for minimizing the structured loss without relaxing the matching prediction. We extend the direct loss minimization to settings in which the black-box solvers are computationally inefficient, as in the setting of multi-graph matchings. Thus, our method allows learning cycle-consistent matchings, while not using a cycle-consistent matching solver, while theoretically recovering the constrained multi-graph matching optimal solution.
 
